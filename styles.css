@@ -648,4 +648,51 @@ body {
         flex-direction: column;
         text-align: center;
     }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
+@font-face {
+  font-family: 'HarmonyOS Sans';
+  src: local('HarmonyOS Sans'), url('https://cdn.jsdelivr.net/gh/ruanyf/font-harmonyos/harmonyos_sans_light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+.neon-title {
+    font-family: 'HarmonyOS Sans', 'Noto Sans SC', '思源黑体', 'Source Han Sans SC', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    letter-spacing: 0.18em;
+    color: #fff;
+    background: none;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background-clip: unset;
+    text-fill-color: unset;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    transition: color 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.neon-title::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #4fc3f7 0%, #1976d2 100%);
+    border-radius: 2px;
+    margin: 0 auto;
+    transition: width 0.6s cubic-bezier(0.4,0,0.2,1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+}
+
+.neon-title:hover::after {
+    width: 100%;
 } 
