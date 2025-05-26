@@ -20,12 +20,12 @@
 
 1. 克隆仓库
 ```bash
-git clone [仓库地址]
+git clone https://github.com/ChenJiang03/websiteTest.git
 ```
 
 2. 进入项目目录
 ```bash
-cd [项目目录名]
+cd websiteTest
 ```
 
 3. 使用 Python 启动本地服务器
@@ -37,7 +37,7 @@ python -m http.server 8000
 
 ## 在线预览
 
-访问 [GitHub Pages 地址] 查看在线演示。
+访问 [https://chenjiang03.github.io/websiteTest/](https://chenjiang03.github.io/websiteTest/) 查看在线演示。
 
 ## 许可证
 
