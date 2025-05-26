@@ -188,19 +188,12 @@ window.addEventListener('load', () => {
         });
     }
     
-    // 首页内容动画 - 修改这部分，确保标题始终显示
+    // 首页内容动画 - 只对整体做动画
     gsap.from('.hero-content', {
         y: 50,
         opacity: 0,
         duration: 1,
-        delay: 0.5,
-        onComplete: () => {
-            // 确保标题完全显示
-            gsap.set('.hero-content h1', {
-                opacity: 1,
-                visibility: 'visible'
-            });
-        }
+        delay: 0.5
     });
     
     gsap.from('.floating-cards .card', {
